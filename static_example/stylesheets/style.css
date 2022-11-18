@@ -1,4 +1,4 @@
-/* Hero Section Start  */
+/* Hero Section Carousel Start  */
 .hero-section .carousel-inner {
     height: 80vh;
 }
@@ -6,7 +6,7 @@
 .hero-section .carousel-inner .carousel-control-next, .carousel-control-prev {
     color:black;
 }
-/* Hero Section End  */
+/* Hero Section Carousel End  */
 
 
 /* Nav Section Start  */

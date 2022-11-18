@@ -1,0 +1,26 @@
+{
+  "name": "project_2",
+  "version": "1.0.0",
+  "description": "Kino and Booking function",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdaCra/Project_2.git"
+  },
+  "author": "Robert, Josip, Adam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdaCra/Project_2/issues"
+  },
+  "homepage": "https://github.com/AdaCra/Project_2#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2",
+    "nodemon": "^2.0.20",
+    "hbs": "^4.1.1"
+
+  }
+}
