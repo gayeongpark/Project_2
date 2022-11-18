@@ -1,0 +1,196 @@
+/* Hero Section Carousel Start  */
+.hero-section .carousel-inner {
+    height: 80vh;
+}
+
+.hero-section .carousel-inner .carousel-control-next, .carousel-control-prev {
+    color:black;
+}
+/* Hero Section Carousel End  */
+
+
+/* Nav Section Start  */
+nav {
+    height: 10vh;
+}
+
+.hero-section .carousel-inner .carousel-control-next, .carousel-control-prev {
+    color:black;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Nav Section End  */
+
+
+/* Booking Page  Section Start  */
+.booking-page {
+    background-color: #202020;
+}
+
+.booking-page h1 {
+    text-align: center;
+    margin-top: 40px;
+    color:#fff;
+}
+
+.booking-page button {
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+
+
+/* Booking Page Section End  */
+
+
+.mdc-fab {
+    background-color: #ff4081;
+    background-color: var(--mdc-theme-primary, #ff4081);
+  }
+
+
+
+.admin {
+    background :pink
+}
+
+/* Seats Class Start */
+
+.ironhack-room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.room-seats {
+    display: flex;
+}
+.room-seats .seat {
+    cursor: pointer;
+}
+.room-seats .seat:hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
+.room-seats .seat.active:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 7px;
+}
+.left .room-row {
+    transform: skew(-15deg);
+    margin: 0 6px;
+}
+.left .seat {
+    width: 35px;
+    height: 50px;
+    border-radius: 7px;
+    margin:90px 15px;
+    background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #b54041, #f3686a);
+    transform: skew(20deg);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.left .row-2 {
+    transform: skew(-13deg);
+}
+.left .row-2 .seat {
+    transform: skew(18deg);
+}
+.left .row-3 {
+    transform: skew(-12deg);
+}
+.left .row-3 .seat {
+    transform: skew(16deg);
+}
+.left .row-4 {
+    transform: skew(-11deg);
+}
+.left .row-4 .seat {
+    transform: skew(15deg);
+}
+.left .row-5 {
+    transform: skew(-10deg);
+}
+.left .row-5 .seat {
+    transform: skew(12deg);
+}
+.left .row-6 {
+    transform: skew(-9deg);
+}
+.left .row-6 .seat {
+    transform: skew(10deg);
+}
+.left .row-7 {
+    transform: skew(-7deg);
+}
+.left .row-7 .seat {
+    transform: skew(8deg);
+}
+.right {
+    margin-left: 400px;
+}
+.right .room-row {
+    transform: skew(7deg);
+    margin: 0 6px;
+}
+.right .seat {
+    width: 35px;
+    height: 50px;
+    border-radius: 7px;
+    margin:90px 15px;
+    background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #b54041, #f3686a);
+    transform: skew(-8deg);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.right .row-2 {
+    transform: skew(9deg);
+}
+.right .row-2 .seat {
+    transform: skew(-10deg);
+}
+.right .row-3 {
+    transform: skew(10deg);
+}
+.right .row-3 .seat {
+    transform: skew(-12deg);
+}
+.right .row-4 {
+    transform: skew(11deg);
+}
+.right .row-4 .seat {
+    transform: skew(-15deg);
+}
+.right .row-5 {
+    transform: skew(12deg);
+}
+.right .row-5 .seat {
+    transform: skew(-16deg);
+}
+.right .row-6 {
+    transform: skew(13deg);
+}
+.right .row-6 .seat {
+    transform: skew(-18deg);
+}
+.right .row-7 {
+    transform: skew(15deg);
+}
+.right .row-7 .seat {
+    transform: skew(-20deg);
+}
+
+/* Seats Class End */
