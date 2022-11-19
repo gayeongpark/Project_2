@@ -1,15 +1,17 @@
 const { Schema, model } = require("mongoose");
 
-const movieSchema = new Schema({
+const venueSchema = new Schema({
     
     date:{Date, required : true },
 
-    movie:{type :  ObjectId,
-        ref :  "Movie"},
+    movie:{
+        type :  ObjectId,
+        ref :  "movie"
+    },
       
     Seating: [{}]
 });
 
-const Movie = model("Movie", movieSchema);
+const Venue = model("venue", venueSchema);
 
-module.exports = Movie;
+module.exports = Venue;

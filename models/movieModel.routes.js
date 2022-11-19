@@ -12,11 +12,13 @@ const movieSchema = new Schema({
 
     img:"https://static.kino.de/wp-content/uploads/2015/08/black-christmas-2006-filmplakat.jpg",
       
-    genre: [{String}],
+    genre: Array,
+
+    trailer: String,
     
     description: {String, required : true }
 });
 
-const Movie = model("Movie", movieSchema);
+const Movie = model("movie", movieSchema);
 
 module.exports = Movie;
