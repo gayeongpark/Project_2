@@ -11,7 +11,7 @@
          "Comedy"
       ],
       "trailer":"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "In this Christmas classic, an old man going by the name of Kris Kringle (Edmund Gwenn) fills in for an intoxicated Santa in Macy's annual Thanksgiving Day parade. Kringle proves to be such a hit that he is soon appearing regularly at the chain's main store in midtown Manhattan."
+      "plot": "In this Christmas classic, an old man going by the name of Kris Kringle (Edmund Gwenn) fills in for an intoxicated Santa in Macy's annual Thanksgiving Day parade. Kringle proves to be such a hit that he is soon appearing regularly at the chain's main store in midtown Manhattan."
    },
    {
       "title":"Tangerine",
@@ -24,7 +24,7 @@
          "Drama"
       ],
       "trailer":"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description": "After hearing that her boyfriend/pimp cheated on her while she was in jail, a transgender sex worker and her best friend set out to find him and teach him and his new lover a lesson."
+      "plot": "After hearing that her boyfriend/pimp cheated on her while she was in jail, a transgender sex worker and her best friend set out to find him and teach him and his new lover a lesson."
    },
    {
       "title":"The Nightmare Before Christmas",
@@ -39,7 +39,7 @@
          "Kids"
       ],
       "trailer":"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description":"The film follows the misadventures of Jack Skellington, Halloweentown's beloved pumpkin king, who has become bored with the same annual routine of frightening people in the real world."
+      "plot":"The film follows the misadventures of Jack Skellington, Halloweentown's beloved pumpkin king, who has become bored with the same annual routine of frightening people in the real world."
    },
    {
       "title":"Die Hard",
@@ -53,7 +53,7 @@
          "Thriller"
       ],
       "trailer":"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description":"New York City policeman John McClane (Bruce Willis) is visiting his estranged wife (Bonnie Bedelia) and two daughters on Christmas Eve. He joins her at a holiday party in the headquarters of the Japanese-owned business she works for."
+      "plot":"New York City policeman John McClane (Bruce Willis) is visiting his estranged wife (Bonnie Bedelia) and two daughters on Christmas Eve. He joins her at a holiday party in the headquarters of the Japanese-owned business she works for."
    }, 
    {
       "title":"Elf",
@@ -67,7 +67,7 @@
          "Kids"
       ],
       "trailer":"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description":"Buddy (Will Ferrell) was accidentally transported to the North Pole as a toddler and raised to adulthood among Santa's elves. Unable to shake the feeling that he doesn't fit in, the adult Buddy travels to New York, in full elf uniform, in search of his real father."
+      "plot":"Buddy (Will Ferrell) was accidentally transported to the North Pole as a toddler and raised to adulthood among Santa's elves. Unable to shake the feeling that he doesn't fit in, the adult Buddy travels to New York, in full elf uniform, in search of his real father."
    },
    {
       "title":"Bad Santa",
@@ -82,7 +82,7 @@
          "Holiday"
       ],
       "trailer":"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description":"In this dark comedy, the crotchety Willie T. Stokes (Billy Bob Thornton) and his partner (Tony Cox) reunite once a year for a holiday con. Posing as a mall Santa and his elf, they rip off shopping outlets on Christmas Eve."
+      "plot":"In this dark comedy, the crotchety Willie T. Stokes (Billy Bob Thornton) and his partner (Tony Cox) reunite once a year for a holiday con. Posing as a mall Santa and his elf, they rip off shopping outlets on Christmas Eve."
    },
    {
       "title":"Home Alone",
@@ -96,7 +96,7 @@
          "Kids"
       ],
       "trailer":"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description":"When bratty 8-year-old Kevin McCallister (Macaulay Culkin) acts out the night before a family trip to Paris, his mother (Catherine O'Hara) makes him sleep in the attic."
+      "plot":"When bratty 8-year-old Kevin McCallister (Macaulay Culkin) acts out the night before a family trip to Paris, his mother (Catherine O'Hara) makes him sleep in the attic."
    },
    {
       "title":"How Grinch stole Christmas",
@@ -110,7 +110,7 @@
          "Kids"
       ],
       "trailer":"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description":"In this live-action adaptation of the beloved children's tale by Dr. Seuss, the reclusive green Grinch (Jim Carrey) decides to ruin Christmas for the cheery citizens of Whoville."
+      "plot":"In this live-action adaptation of the beloved children's tale by Dr. Seuss, the reclusive green Grinch (Jim Carrey) decides to ruin Christmas for the cheery citizens of Whoville."
    },
    {
       "title":"Tokyo Godfathers",
@@ -124,7 +124,7 @@
          "Anime"
       ],
       "trailer":"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description":"Middle-aged alcoholic Gin (Toru Emori), teenage runaway Miyuki (Aya Okamoto) and former drag queen Hana (Yoshiaki Umegaki) are a trio of homeless people surviving as a makeshift family on the streets of Tokyo."
+      "plot":"Middle-aged alcoholic Gin (Toru Emori), teenage runaway Miyuki (Aya Okamoto) and former drag queen Hana (Yoshiaki Umegaki) are a trio of homeless people surviving as a makeshift family on the streets of Tokyo."
    },
    {
       "title":"Black Christmas",
@@ -137,7 +137,7 @@
          "Horror"
       ],
       "trailer":"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "description":"The holiday season turns deadly for a group of sorority sisters (Katie Cassidy, Mary Elizabeth Winstead, Lacey Chabert, Michelle Trachtenberg) who are stranded at their campus house during a snowstorm."
+      "plot":"The holiday season turns deadly for a group of sorority sisters (Katie Cassidy, Mary Elizabeth Winstead, Lacey Chabert, Michelle Trachtenberg) who are stranded at their campus house during a snowstorm."
    }
 ]
                                            

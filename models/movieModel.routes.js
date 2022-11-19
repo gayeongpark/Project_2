@@ -16,7 +16,10 @@ const movieSchema = new Schema({
 
     trailer: String,
     
-    description: {String, required : true }
+    plot: {String, required : true }
+},
+{
+    timestamps: true
 });
 
 const Movie = model("movie", movieSchema);
