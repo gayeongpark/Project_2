@@ -18,6 +18,6 @@ const showSchema = new Schema({
     timestamps: true
 });
 
-const Show = model("show", showSchema);
-
+const Show = model("how", showSchema);
+S
 module.exports = Show;

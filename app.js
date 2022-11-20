@@ -1,39 +1,38 @@
-//.env settings
+// environment variables/settings
 require('dotenv/config');
 
-//connect to database
+//database connection
 require('./db');
 
-//Handlebars
+// node js framework
+const express = require('express');
+
+// handlebars
 const hbs = require('hbs');
 
-//load express.js
-const express = require('express')
+const app = express();
 
-// init app & Middleware
-const app = express()
-
-//getting exports from config.
+// config folder
 require('./config')(app);
+require("./config/session.config")(app);
 
 // default value for title local
-const projectName = 'Project2';
+const projectName = 'Project_2';
 
-app.locals.title = `${(projectName)}: ironCINEMA`;
+app.locals.title = `${(projectName)}- ironCinema`;
 
-// Routes
-const indexRoutes = require('./routes/index.routes')
-app.use('/', indexRoutes);
+// 👇 Start handling routes here
+const index = require('./routes/index');
+app.use('/', index);
 
-const adminRoutes = require('./routes/admin.routes')
-app.use('/', adminRoutes);
+const admin = require('./routes/admin.routes');
+app.use('/admin', admin);
 
-const userBookingRoutes = require('./routes/userBooking.routes')
-app.use('/', userBookingRoutes);
+const user = require('./routes/user.routes');
+app.use('/user', user);
 
-// ❗ To handle errors
+// ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
 
-
-
 module.exports = app;
+
