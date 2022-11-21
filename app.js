@@ -9,12 +9,13 @@ const express = require('express');
 
 // handlebars
 const hbs = require('hbs');
-
 const app = express();
 
 // config folder
 require('./config')(app);
-require("./config/session.config")(app);
+
+// Comment  
+// require("./config/session.config")(app);
 
 // default value for title local
 const projectName = 'Project_2';
@@ -25,7 +26,10 @@ app.locals.title = `${(projectName)}- ironCinema`;
 const index = require('./routes/index');
 app.use('/', index);
 
-const admin = require('./routes/admin.routes');
+const venue = require('./routes/venue');
+app.use('/venue', venue);
+
+const admin = require('./routes/admin');
 app.use('/admin', admin);
 
 const user = require('./routes/user.routes');

@@ -1,6 +1,6 @@
 # Project_2 
 
-## ironCINEMA
+## Iron CINEMA
 
 <br>
 By:
