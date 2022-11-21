@@ -205,25 +205,6 @@ body { font-family: sans-serif; }
   max-width: 230px ;
 }
 
-
-.footer-wrapper{
-  background-color:#070A23;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 5%;
-}
-
-.footer-wrapper .left, .footer-wrapper .right{
-  margin-top: 30px;
-}
-
-.footer-wrapper .left div , .footer-wrapper .right div{
-  margin:15px 0px;
-}
-
-
-
 /* Seats Class Start */
 
 
@@ -387,3 +368,47 @@ body {
 
 
 /* Seats Class End */
+
+
+/* Footer Section Start */
+footer {
+  background-color: #070A23;	
+}
+
+footer .footer-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 5%;
+}
+
+footer .footer-wrapper .left, footer .footer-wrapper .right{
+  margin-top: 30px;
+}
+
+footer .footer-wrapper .left div , footer .footer-wrapper .right div{
+  margin:15px 0px;
+}
+
+footer .footer-nav-information {
+  color: #fff;
+  font-size: 16px;
+}
+
+footer .footer-nav-information ul {
+  padding:0px;
+  margin:0px;
+}
+
+footer .footer-nav-information ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right:45px;
+}
+
+footer .footer-nav-information ul li a {
+ color:#fff;
+ text-decoration: none;
+}
+
+
+/* Footer section End */

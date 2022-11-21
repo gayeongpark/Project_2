@@ -9,7 +9,7 @@ const showSchema = new Schema({
         ref :  "movie"
     },
       
-    Seating: [{
+    venueSeating: [{
         type: ObjectId,
         ref : "venue"
     }]
