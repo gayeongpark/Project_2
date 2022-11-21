@@ -11,6 +11,32 @@ router.get("/", (req, res, next) => {
   res.render("index" , {dataDB});
 });
 
+const Test = require("../models/test");
+
+router.get("/add-users", (req, res)=>{
+  console.log(Test);
+  const username = 'rex';
+  const password = '1234';
+
+  console.log(username);
+  console.log(password);
+
+  // create the user
+  Test.create({
+      username: username,
+      password: password
+  })
+  .then(createdUser => {
+          console.log(createdUser)
+         // res.redirect("/login")
+      })
+  .catch(err => {
+          
+  })
+
+
+});
+
 
 /*register*/
 // router.get("/auth/register", (req, res, next)=>{

@@ -1,17 +1,8 @@
 // connection with mongodb
 const mongoose = require("mongoose");
 
-// MongoDB URI 
-
-// Comment
-// const MONGO_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/project_2";
-
-
-// mongoose
-//   .connect(MONGO_URI)
-//   .then((x) => {
-//     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
-//   })
-//   .catch((err) => {
-//     console.error("Error connecting to mongo: ", err);
-//   });
+// DataBase Connected
+const dataBase = 'mongodb+srv://donrob3r7:donrob3r7@nodetuts.qjfzzzs.mongodb.net/?retryWrites=true&w=majority';
+mongoose.connect(dataBase, { useNewUrlParser: true, useUnifiedTopology: true }).then(
+    (result) => console.log('DataBase: Connected')
+).catch((error)=> console.log(error));
