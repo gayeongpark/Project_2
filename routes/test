@@ -1,0 +1,63 @@
+const bcrypt = require('bcryptjs');
+const User = require('../models/User.model');
+const { isLoggedIn } = require('../middleware/route-guard');
+router.get('/register', (req, res, next) => {
+  res.render('register');
+});
+router.post('/register', (req, res, next) => {
+  const { username, password } = req.body;
+  //password should be over 4 characters
+  if (password.length < 4) {
+    res.render('register', { message: 'Your password has to be 4 chars min' });
+    return;
+  }
+  // Username should not be empty
+  if (username.length === 0) {
+    res.render('register', { message: 'Your username cannot be empty' });
+    return;
+  }
+  User.findOne({ username }).then((userFromDB) => {
+    // if there is a user
+    if (userFromDB !== null) {
+      res.render('register', { message: 'Your username is already taken' });
+      return;
+    } else {
+      const salt = bcrypt.genSaltSync();
+      const hash = bcrypt.hashSync(password, salt);
+      User.create({
+        username: username,
+        password: hash,
+      })
+        .then((createdUser) => {
+          console.log(createdUser);
+          res.redirect('/login');
+        })
+        .catch((err) => {
+          next(err);
+        });
+    }
+  });
+});
+router.get('/login', (req, res) => {
+  res.render('login');
+});
+router.post('/login', (req, res, next) => {
+  const { username, password } = req.body;
+  User.findOne({ username: username }).then((userFromDB) => {
+    if (!userFromDB) {
+      res.render('login', { message: 'Invalid Credentials' });
+      return;
+    } else if (bcrypt.compareSync(password, userFromDB.password)) {
+      console.log('this is user:', userFromDB);
+      req.session.user = userFromDB;
+      res.redirect('/');
+    } else {
+      res.render('login', { message: 'Invalid Crentials' });
+    }
+  });
+});
+router.post('/logout', (req, res, next) => {
+  req.session.destroy();
+  res.redirect('/');
+});
+module.exports = router;

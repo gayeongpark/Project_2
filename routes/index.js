@@ -1,15 +1,20 @@
 const router = require("express").Router();
-const User = require("../models/User.model");
-const bcryptjs = require("bcryptjs");
+
 
 // Inject info  from the DATABASE
 const dataDB = require('../db/movies.loaded.json')
 
 /* GET home page */
-router.get("/", (req, res, next) => {
-  
-  res.render("index" , {dataDB});
+router.get("/", (req, res) => {
+  console.log('Root:');
+  console.log(req.session);
+  const User = req.session.user;
+
+  // Injecting dataDB
+  res.render("index", {dataDB, User});
 });
+
+
 
 const Test = require("../models/test");
 
