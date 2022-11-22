@@ -215,3 +215,79 @@ body { font-family: sans-serif; }
 }
 
 /* Seats Class End */
+
+
+
+/* FAQ  styling */
+
+
+body{
+font-family: 'Times New Roman', Times, serif;
+}
+.faq-heading{
+border-bottom: #777;
+padding: 20px 60px;
+
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.hr-line{
+width: 65%;
+margin: auto;
+
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background coulor : #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    margin:auto
+
+} 
+.faq-body{
+    margin: auto;
+    /* text-aligin:center; */
+    width: 50%;
+    padding: auto;
+}
+
+/* Add a background color to the button if it is clicked on */
+.active,
+.faq-page:hover {
+    background: color #f9f9f9;
+}
+ /* Style the faq-page panel.Note: hidden by default */
+ .faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode charachter for "plus" sign(+) */ 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    scroll-margin-left: 5px;
+
+}
+.active::after {
+    content: "\2796";
+    /* Unicode charachter for "minus" sign (-) */ 
+}
+
+/* FAQ  styling End */
+
+
+
