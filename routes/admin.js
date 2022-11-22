@@ -10,7 +10,7 @@ router.get("/", (req, res, next) => {
   
     res.render('admin' , {dataDB});
 });
-  
+
 
 
 module.exports = router;

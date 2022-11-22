@@ -20,11 +20,17 @@
             <span class="mb-0"><a href="/">IRON CINEMA</a></span>
              </div>
             <div class="login">
-                <a href="/login" target="_blank" class="btn btn-light">Login / Register</a>
+           
+                {{#if User.username}}
+                <div class="user">Welcome: {{User.username}}</div> 
+                <div> <a href="/logout" class='btn btn-light'>Logout</a> </div>
+                 {{else}}
+                     <a href='/login' class='btn btn-light'>Log in</a>
+                     <a href='/register' class='btn btn-light'>Register</a>
+                 {{/if}}
             </div>
-    </div>
-
     </nav>
+       
    
     {{{body}}}
     <footer>

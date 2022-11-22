@@ -15,12 +15,15 @@ const app = express();
 require('./config')(app);
 
 // Comment  
-// require("./config/session.config")(app);
+require("./config/session.config")(app);
 
 // default value for title local
 const projectName = 'Project_2';
 
 app.locals.title = `${(projectName)}- ironCinema`;
+
+
+
 
 // 👇 Start handling routes here
 const index = require('./routes/index');
@@ -32,8 +35,8 @@ app.use('/venue', venue);
 const admin = require('./routes/admin');
 app.use('/admin', admin);
 
-const user = require('./routes/user.routes');
-app.use('/user', user);
+const auth = require("./routes/auth");
+app.use("/", auth);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
