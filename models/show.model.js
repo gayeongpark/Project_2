@@ -26,3 +26,5 @@ const showSchema = new Schema({
 });
 
 const Show = model("Show", showSchema);
+
+module.exports = Show;

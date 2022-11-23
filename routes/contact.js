@@ -8,20 +8,18 @@ router.get('/contact', (req, res) => {
 
 router.post('/contact/send', (req, res) => {
   const { firstname, lastname, email, message } = req.body;
-  console.log(req.body);
-  console.log('here');
   Contact.create({
     firstname,
     lastname,
     email,
     message
   })
-  .then(createdContact => {
-    res.render("contactSend")
-  })
-  .catch (err => {
-    res.redirect("/")
-  })
-  });
+    .then((createdContact) => {
+      res.render('contactSend');
+    })
+    .catch((err) => {
+      res.redirect('/');
+    });
+});
 
 module.exports = router;
