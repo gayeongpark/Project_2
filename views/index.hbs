@@ -1,26 +1,7 @@
 <!-- HeroSection HTML init  -->
 <div class="carousel carousel-main" data-flickity='{ "hash": true }'>
-  <div class="carousel-cell"  style="background-image:url('https://i.ibb.co/fHf3Hfc/Miracle-on34th.jpg')" > 
-    <div class="cell-wrapper col-8" >
-      <div class="cell-title">
-          Miracle on34th street
-      </div>
-      <div class="cell-content">
-        In this Christmas classic, an old man going by the name of Kris Kringle (Edmund Gwenn) fills in for an intoxicated Santa in Macy's annual Thanksgiving Day parade. Kringle proves to be such a hit that he is soon appearing regularly at the chain's main store in midtown Manhattan.
-      </div>
-      <div class="cell-date">
-         Next show: 12.12.2022
-      </div>
-      <div class="cell-buttons">
-            <a href='/venue' class="btn btn-warning">Book now</button>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-light">Watch Trailer</a>
-            
-      </div>
-    </div> 
-  </div>
-
   {{#each dataDB}}
-      <div class="carousel-cell"  style="background-image:url({{img}})" > 
+      <div class="carousel-cell"  style="background-image:url({{poster}})" > 
         <div class="cell-wrapper col-8" >
               <div class="cell-title">
                   {{title}}

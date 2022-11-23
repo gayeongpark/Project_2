@@ -27,9 +27,7 @@ router.get("/", isUserLogIn , (req, res) => {
 // )});
 
 /* Get FAQ page */
-
 router.get("/faq", (req, res) => {
-
   res.render("faq");
 });
 
