@@ -44,19 +44,28 @@
     //   });
     // });
 
+    
     // Password toggle Icon
     const iconPassword = document.querySelector("#togglePassword");
     const inputpassword = document.querySelector("#password");
 
-    iconPassword.addEventListener("click", function () {
-        // toggle the type attribute
-     
-        const type = inputpassword.getAttribute("type") === "password" ? "text" : "password";
-        password.setAttribute("type", type);
+    if(iconPassword){
+        iconPassword.addEventListener("click", function () {
+            // toggle the type attribute
         
-        // toggle the icon
-        this.classList.toggle("bi-eye");
-    });
+            const type = inputpassword.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("bi-eye");
+        });
+    }
 
 
-    
+ const carouselElement  = document.querySelector(".carousel");
+
+    function reportWindowSize() {   
+        carouselElement.style.width = `${innerWidth}px`;
+    }
+reportWindowSize();
+window.onresize = reportWindowSize;

@@ -1,5 +1,5 @@
 <!-- HeroSection HTML init  -->
-<div class="carousel carousel-main" data-flickity='{ "hash": true }'>
+<div class="carousel carousel-main" data-flickity='{ "hash": true , "contain": true }'>
   {{#each dataDB}}
       <div class="carousel-cell"  style="background-image:url({{poster}})" > 
         <div class="cell-wrapper col-8" >
@@ -31,9 +31,9 @@
     <h2>Cinema program</h2>
     <span>Movies currently showing at 6:00PM at Iron Cinema - Storkower Str. 132</span>
 
-    <div class="row">
+    <div class="row align-items-center">
       {{#each dataDB}}
-        <div class="col-3">
+        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12">
             <div class="row-wrapper">
               <img src={{img}} alt={{title}} >
               <a href='/venue' class="btn btn-warning">Book now</a>

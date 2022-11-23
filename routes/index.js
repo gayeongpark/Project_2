@@ -6,7 +6,7 @@ const dataDB = require('../db/movies.loaded.json')
 const {isUserLogIn} = require('../middleware/authorization');
 
 /* GET home page */
-router.get("/", isUserLogIn , (req, res) => {
+router.get("/", (req, res) => {
   // Injecting dataDB
   res.render("index", {dataDB});
 });

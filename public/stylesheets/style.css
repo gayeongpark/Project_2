@@ -125,7 +125,7 @@ nav .logo  .blink {
 /* Nav Section Start  */
 nav.navbar {
   background-color:  #070A23;
-  height: 7vh;
+  min-height: 50px;
   padding:10px 0;
 }
 
