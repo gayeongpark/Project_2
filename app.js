@@ -24,6 +24,23 @@ app.locals.title = `${(projectName)}- ironCinema`;
 
 
 
+// No Idea why this bullshit is workin.
+app.use(( req, res, next) => {
+    hbs.registerHelper('GODMODE', function(string){
+        // Getting the username with req from middleware
+        let User = 'Pula';
+        if(req.session.user) {
+            User = req.session.user.username;
+        } 
+        if( User === 'admin'){
+            return '<a  href="/admin" class="btn btn-light">Admin Login</a>';
+        } else {
+            return '';
+        }
+    });
+    next();
+})
+
 
 // 👇 Start handling routes here
 const index = require('./routes/index');

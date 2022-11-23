@@ -1,13 +1,23 @@
-<h1>Register Now!</h1>
-<form action="/register" method="POST">
-	<label for="username">Username: </label>
-	<input type="text" name="username" placeholder="Username" required/>
+<div class='login_register_container'>
+  <h1 class='login_heading'>Register Now!</h1>
+  <p class="register-p">Please fill in this form to create an account.</p>
+  <hr/>
+  <form action='/register' method='POST'>
+    <label id='name' for='username'>Username: </label>
+    <input type='text' name='username' placeholder='Username' required />
 
-	<label for="password">Password: </label>
-	<input type="password" name="password" placeholder="Password" required/>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" placeholder='Password' required />
+    <i class="bi bi-eye-slash" id="togglePassword"></i>
 
-	<button type="submit">Register</button>
+
+    <p>By creating an account you agree to our
+      <a href='#' style='color:dodgerblue'>Terms & Privacy</a>.</p>
+    <div class="clearfix">
+      <button class="register-btn" type='submit'>Register</button>
+    </div>
     {{#if message}}
-		<p>{{message}}</p>
-	{{/if}}
-</form>
+      <p class="username_taken">{{message}}</p>
+    {{/if}}
+  </form>
+</div>

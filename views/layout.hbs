@@ -7,6 +7,8 @@
     <title>Document</title>
     <!-- Bootstrap 5 CDN Min Version CSS  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap 5 Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <!-- Carrousel -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- Custom Css -->
@@ -17,7 +19,11 @@
     <nav class="navbar navbar-light">
         <div class="navbar-wrapper">
             <div class="logo">
-            <span class="mb-0"><a href="/">IRON CINEMA</a></span>
+                <a href="/">
+                    <div id="text">
+                             <span class="blink">IRON <span id="broke-light">CINE</span>MA</span>
+                    </div>
+                </a>
              </div>
             <div class="login">
            
@@ -30,6 +36,8 @@
                  {{/if}}
             </div>
     </nav>
+
+      
        
    
     {{{body}}}
@@ -45,13 +53,16 @@
                     <ul>
                         <li><a href="#">Terms of use</a></li>
                         <li><a href="#">Contact us</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="/faq">FAQ</a></li>
                         <li><a href="#">Imprint</a></li>
                     </ul>
                 </div>
             </div>
+       
             <div class="right">
-                <a  href="/admin" class="btn btn-light">Admin Login</a>
+            {{#GODMODE}}
+                {{body}}
+            {{/GODMODE}}
                 <div>Accepted payment methods:</div>
             </div>
         </div>

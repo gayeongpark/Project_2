@@ -13,20 +13,36 @@ router.post("/register", (req, res, next)=>{
     const username = req.body.username;
     const password = req.body.password;
 
-    console.log(username);
-    // create the user
-    User.create({
-        username: username,
-        password: password
-    })
-    .then(createdUser => {
-            console.log('User Up');
-            res.redirect("/login");
-        })
-    .catch(err => {
-            next(err)
-    })
+    //password should be over 4 characters
+    if (password.length < 4) {
+         res.render('register', { message: 'Your password has to be 4 chars min' });
+         return;
+    }
 
+    User.findOne({ username }).then((userFromDB) => {
+
+        // Check if your username was taken buy someone else
+        if (userFromDB !== null) {
+            res.render('register', { message: 'Your username is already taken' });
+            return;
+          } else {
+            const salt = bcrypt.genSaltSync();
+            const hash = bcrypt.hashSync(password, salt);
+            User.create({
+              username: username,
+              password: hash,
+            })
+              .then((createdUser) => {
+                console.log(createdUser);
+                res.redirect('/login');
+              })
+              .catch((err) => {
+                next(err);
+              });
+          }
+      });
+
+ 
 });
 
 // Login
@@ -35,15 +51,20 @@ router.post("/login", (req, res, next) => {
     const  password  = req.body.password;
 
     User.findOne({ username: username }).then((dataUser) => {
-       
-        console.log(req.session.cookie);
-        req.session.user = dataUser;
-        res.redirect("/");
-    }).catch((error) => {
-        console.error(error);
-    })
+        if (!dataUser) {
+            res.render('login', { message: 'Invalid Credentials' });
+            return;
+        } else if (bcrypt.compareSync(password, dataUser.password)){
+            console.log('this is user:', dataUser);
+            req.session.user = dataUser;
+            res.redirect('/');
+        } else {
+            res.render('login', { message: 'Invalid Crentials' });
+        }
+     
 
 });
+})
 
 router.get('/login', (req, res) => {
     res.render('login');

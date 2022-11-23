@@ -1,13 +1,13 @@
 const router = require("express").Router();
-
+const Movie = require("../models/movie.model");
 
 // Inject info  from the DATABASE
 const dataDB = require('../db/movies.loaded.json')
+const {isUserLogIn} = require('../middleware/authorization');
 
 /* GET home page */
-router.get("/", (req, res) => {
-  console.log('Root:');
-  console.log(req.session);
+router.get("/", isUserLogIn , (req, res) => {
+  // Injected User session into root
   const User = req.session.user;
 
   // Injecting dataDB
@@ -16,68 +16,24 @@ router.get("/", (req, res) => {
 
 
 
-const Test = require("../models/test");
+// Comment bcz we dont have the same DATABASE
 
-router.get("/add-users", (req, res)=>{
-  console.log(Test);
-  const username = 'rex';
-  const password = '1234';
+// router.get("/", (req, res, next) => {
+//   Movie.find()
+//   .then ( (dataDB) => {
+//     console.log("poof")
+//     res.render("index" , {dataDB})
 
-  console.log(username);
-  console.log(password);
+//   }).catch( error => {
+//     console.error(error);
+//   }
+// )});
 
-  // create the user
-  Test.create({
-      username: username,
-      password: password
-  })
-  .then(createdUser => {
-          console.log(createdUser)
-         // res.redirect("/login")
-      })
-  .catch(err => {
-          
-  })
+/* Get FAQ page */
 
+router.get("/faq", (req, res) => {
 
+  res.render("faq");
 });
-
-
-/*register*/
-// router.get("/auth/register", (req, res, next)=>{
-//     res.render("register.hbs");
-// });
-
-// router.post("/auth/register", (req, res, next)=>{
-//     const {username, password} = req.body;
-//     if(!username || !password){
-//         res.render("register", {message: "Please fill in the required fields to sign up."});
-//         return;
-//     }
-
-//     if(password.length < 6){
-//         res.render("register", {message: "Password should have at least 6 characters."});
-//         return;
-//     };
-
-//     User.findOne({username})
-//     .then((userFromDB)=>{
-//         if( userFromDB !== null ){
-//             res.render("register", { message: "This Username already exists!" });
-//             return;
-//         } else {
-//             const salt = bcryptjs.genSaltSync();
-//             const hashedPassword = bcryptjs.hashSync(password, salt);
-
-//             User.create({username, password: hashedPassword})
-//             .then(userFromDB =>{
-//                 console.log(userFromDB.password);
-//                 res.redirect("/auth/login");
-//             })
-//         }
-//     })
-//     .catch(error => next(error));
-
-// });
 
 module.exports = router;

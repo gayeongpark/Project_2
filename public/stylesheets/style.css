@@ -1,47 +1,129 @@
-
-/* Carrousel  Section Start  */
-/* 
-* { box-sizing: border-box; }
-
-.flickity-page-dots { display: none;}
-
-body { font-family: sans-serif; }
-
-.carousel {
-  background: #EEE;
+ /* Special Css DO NOT TOUCH START */
+ nav .logo div {
+  text-align:center;
+  animation: border-flicker 2s linear infinite;
 }
 
-.carousel img {
-    display: block;
-    height: 345px;
-    width: 230px;
+nav .logo  .blink {
+  color:#FF00E6;
+  font-size:30px;
+  letter-spacing:12px;
+  animation: text-flicker 3s linear infinite;
+  filter: blur(2);
 }
 
-.carousel-cell {
-  opacity: 0.6;
-  width: 20%;
-  margin-right: 5%;
+#broke-light {
+  animation: letter-flicker 2s linear infinite;
 }
 
-
-.carousel-cell.is-selected{
-  opacity: 1;
+@keyframes text-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  2% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  8% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  9% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  12% {
+    opacity:0.1;
+    text-shadow: 0px 0px rgba(242, 22, 22, 1);
+  }
+  20% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  25% {
+    opacity:0.3;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  30% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  70% {
+    opacity:0.7;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  72% {
+    opacity:0.2;
+    text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  77% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  100% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
 }
 
-img {
-  width: 100%;
-  height: auto;
+@keyframes letter-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  2% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  4% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  
+  19% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  21% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  23% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  80% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  83% {
+    opacity:0.4;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  87% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
 }
- */
+ /* Special css DO NOT TOUCH END */
 
+ /* General Css Start */
  body{
   background-color: #0d1133;
   color: #fff;
  }
+ /* General Css End */
 
 
 /* Nav Section Start  */
-nav.nav-bar {
+nav.navbar {
   background-color:  #070A23;
   height: 7vh;
   padding:10px 0;
@@ -61,6 +143,10 @@ nav .navbar-wrapper {
 nav .navbar-wrapper .login{
   display: flex;
   align-items: center;
+}
+
+nav .navbar-wrapper .login a{
+  margin: 0 20px;
 }
 
 nav .navbar-wrapper .login .user{
@@ -425,3 +511,103 @@ footer .footer-nav-information ul li a {
 /* Footer section End */
 
 
+
+/* Login and Register section start */
+.login_register_container {
+  padding: 25px 300px 25px 300px;
+  margin: 50px;
+  outline: none;
+  font-size: 16px;
+  color: #ffff;
+  margin-bottom: 250px;
+}
+
+.login_register_container .login_heading {
+  padding: 10px 0;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.login_register_container form input[type='text'] {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+}
+
+.login_register_container form i {
+  margin-left: -45px;
+  top: 4px;
+  cursor: pointer;
+  color: #0d1133;
+  font-size: 26px;
+  position: relative;
+}
+
+
+.login_register_container form input[type='password'] {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+}
+
+.login_register_container form input[type='text']:focus,
+.login_register_container form input[type='password']:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.login_register_container form input[type='checkbox']{
+  margin-right: 20px;
+}
+
+
+
+
+.login_register_container .register-p {
+  text-align: center;
+}
+
+.login_register_container input[type='checkbox']:focus {
+  align-items: flex-end;
+}
+
+.login_register_container  .username_taken {
+  margin-top: 15px;
+}
+
+
+.login_register_container .register-btn {
+  background-color: #070a23;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid white;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.login_register_container .register-btn:hover {
+  border: none;
+  background-color: #070a23;
+}
+
+.login_register_container .register-btn:onclick {
+  border: 1px solid white;
+  background-color: #070a23;
+}
+/* Login and Register section end */
+
+
+/* Faq section Start */
+.faq-wrapper {
+  min-height: 80vh;
+}
+/* Faq section End */

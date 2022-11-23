@@ -1,0 +1,24 @@
+<div>
+<h1 class="text-center p-4">Admin Page</h1>
+<h2 class="text-center p-4">Add Movies</h2>
+</div>
+  <form action="/addmovie" method="POST">
+<div class="inputForm">
+<div class = "labelDiv">
+
+    <label> Date </label><br>
+        {{!-- <script type="text/javascript"
+    src="https://www.snaphost.com/jquery/Calendar.aspx"></script> --}} 
+        <input type="date" class="formInput" name="date"><br>
+</div>
+<br>
+<div class = "labelDiv">
+    <label> Movie </label><br>
+        <input type="text" class="formInput" name="movie"><br>
+</div>
+<br>
+<div class = "labelDiv"></div>
+    <label> Directed by </label><br>
+        <input type="text" class="formInput" name="director"><br>
+</div>
+</form>

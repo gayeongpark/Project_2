@@ -1,16 +1,23 @@
 const { Schema, model } = require("mongoose");
 
 const showSchema = new Schema({
-    
+
     date:{Date, required : true },
 
-    movie:{
+    movie: [{
+        id: {
         type :  ObjectId,
         ref :  "movie"
-    },
-      
+        }, 
+    }],
+
     venueSeating: [{
-        type: ObjectId,
+        type: ObjectId.seating,
+        ref : "venue"
+    }],
+
+    freeSeating: [{
+        type: ObjectId.seating,
         ref : "venue"
     }]
 },
@@ -18,6 +25,4 @@ const showSchema = new Schema({
     timestamps: true
 });
 
-const Show = model("how", showSchema);
-S
-module.exports = Show;
+const Show = model("Show", showSchema);
