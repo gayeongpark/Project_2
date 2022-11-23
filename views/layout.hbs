@@ -26,14 +26,9 @@
                 </a>
              </div>
             <div class="login">
-           
-                {{#if User.username}}
-                <div class="user">Welcome: {{User.username}}</div> 
-                <div> <a href="/logout" class='btn btn-light'>Logout</a> </div>
-                 {{else}}
-                     <a href='/login' class='btn btn-light'>Log in</a>
-                     <a href='/register' class='btn btn-light'>Register</a>
-                 {{/if}}
+                {{#username}}
+                    {{body}}
+                {{/username}}
             </div>
     </nav>
 

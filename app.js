@@ -28,16 +28,32 @@ app.locals.title = `${(projectName)}- ironCinema`;
 app.use(( req, res, next) => {
     hbs.registerHelper('GODMODE', function(string){
         // Getting the username with req from middleware
-        let User = 'Pula';
+        let GOD = 'Pula';
         if(req.session.user) {
-            User = req.session.user.username;
+            GOD = req.session.user.username;
         } 
-        if( User === 'admin'){
+        
+        if( GOD === 'admin'){
             return '<a  href="/admin" class="btn btn-light">Admin Login</a>';
         } else {
             return '';
         }
     });
+
+    hbs.registerHelper('username', function(string){
+        // Getting the username with req from middleware
+        let User = '';
+        if(req.session.user) {
+            User = req.session.user.username;
+        } 
+        console.log(User);
+        if(User){
+            return `<div class="user">Welcome: ${User}</div>  <div> <a href="/logout" class="btn btn-light">Logout</a> </div>`;
+        } else {
+            return "<a href='/login' class='btn btn-light'>Log in</a> <a href='/register' class='btn btn-light'>Register</a>";
+        }
+    });
+
     next();
 })
 

@@ -7,11 +7,8 @@ const {isUserLogIn} = require('../middleware/authorization');
 
 /* GET home page */
 router.get("/", isUserLogIn , (req, res) => {
-  // Injected User session into root
-  const User = req.session.user;
-
   // Injecting dataDB
-  res.render("index", {dataDB, User});
+  res.render("index", {dataDB});
 });
 
 
