@@ -724,3 +724,12 @@ p {
 .tree > li > span:before {
   outline: none;
 }
+
+.icon-container {
+ display: flex;
+ flex-direction: column;
+}
+
+
+
+
