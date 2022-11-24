@@ -1,13 +1,13 @@
- /* Special Css DO NOT TOUCH START */
- nav .logo div {
-  text-align:center;
+/* Special Css DO NOT TOUCH START */
+nav .logo div {
+  text-align: center;
   animation: border-flicker 2s linear infinite;
 }
 
-nav .logo  .blink {
-  color:#FF00E6;
-  font-size:30px;
-  letter-spacing:12px;
+nav .logo .blink {
+  color: #ff00e6;
+  font-size: 30px;
+  letter-spacing: 12px;
   animation: text-flicker 3s linear infinite;
   filter: blur(2);
 }
@@ -18,115 +18,113 @@ nav .logo  .blink {
 
 @keyframes text-flicker {
   0% {
-    opacity:0.1;
+    opacity: 0.1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
-  
+
   2% {
-    opacity:1;
+    opacity: 1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
   8% {
-    opacity:0.1;
+    opacity: 0.1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
   9% {
-    opacity:1;
+    opacity: 1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
   12% {
-    opacity:0.1;
+    opacity: 0.1;
     text-shadow: 0px 0px rgba(242, 22, 22, 1);
   }
   20% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
   25% {
-    opacity:0.3;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    opacity: 0.3;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
   30% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
-  
+
   70% {
-    opacity:0.7;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    opacity: 0.7;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
-  
+
   72% {
-    opacity:0.2;
-    text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+    opacity: 0.2;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
-  
+
   77% {
-    opacity:.9;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
   100% {
-    opacity:.9;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
 }
 
 @keyframes letter-flicker {
   0% {
-    opacity:0.1;
+    opacity: 0.1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
   2% {
-    opacity:0.1;
+    opacity: 0.1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
   4% {
-    opacity:1;
+    opacity: 1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
-  
-  
+
   19% {
-    opacity:1;
+    opacity: 1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
   21% {
-    opacity:0.1;
+    opacity: 0.1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
   23% {
-    opacity:1;
+    opacity: 1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
-  
+
   80% {
-    opacity:1;
+    opacity: 1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
   83% {
-    opacity:0.4;
+    opacity: 0.4;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
   87% {
-    opacity:1;
+    opacity: 1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
 }
- /* Special css DO NOT TOUCH END */
+/* Special css DO NOT TOUCH END */
 
- /* General Css Start */
- body{
+/* General Css Start */
+body {
   background-color: #0d1133;
   color: #fff;
- }
- /* General Css End */
-
+}
+/* General Css End */
 
 /* Nav Section Start  */
 nav.navbar {
-  background-color:  #070A23;
+  background-color: #070a23;
   height: 7vh;
-  padding:10px 0;
+  padding: 10px 0;
 }
 
 nav div {
@@ -134,30 +132,26 @@ nav div {
 }
 
 nav .navbar-wrapper {
-  padding:0px 5%;
+  padding: 0px 5%;
   width: 100%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-nav .navbar-wrapper .login{
+nav .navbar-wrapper .login {
   display: flex;
   align-items: center;
 }
 
-nav .navbar-wrapper .login a{
+nav .navbar-wrapper .login a {
   margin: 0 20px;
 }
 
-nav .navbar-wrapper .login .user{
+nav .navbar-wrapper .login .user {
   margin-right: 20px;
 }
 
-
-
-
 /* Nav Section End  */
-
 
 .cell-title {
   font-family: 'Archivo';
@@ -165,18 +159,24 @@ nav .navbar-wrapper .login .user{
   font-weight: 700;
   font-size: 36px;
   line-height: 39px;
-  color:#fff;
+  color: #fff;
 }
 
 .cell-wrapper {
   padding-left: 5%;
   padding-top: 95px;
   height: 100%;
-  background: linear-gradient(102.19deg, #0D1133 18.46%, rgba(13, 17, 51, 0.85) 44.53%, rgba(13, 17, 51, 0) 75.88%, rgba(13, 17, 51, 0) 91.12%);
+  background: linear-gradient(
+    102.19deg,
+    #0d1133 18.46%,
+    rgba(13, 17, 51, 0.85) 44.53%,
+    rgba(13, 17, 51, 0) 75.88%,
+    rgba(13, 17, 51, 0) 91.12%
+  );
 }
 
 .cell-wrapper div {
-  color:#fff;
+  color: #fff;
   margin: 20px 0;
 }
 
@@ -185,16 +185,16 @@ nav .navbar-wrapper .login .user{
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color:#fff;
+  color: #fff;
 }
 
-.cell-buttons a{
+.cell-buttons a {
   margin-right: 30px;
 }
 
-
-.hero-section .carousel-inner .carousel-control-next, .carousel-control-prev {
-  color:black;
+.hero-section .carousel-inner .carousel-control-next,
+.carousel-control-prev {
+  color: black;
 }
 
 nav ul li {
@@ -204,23 +204,23 @@ nav ul li {
 
 /* Nav Section End  */
 
-
 /* Carousel  Start */
 
-
-
-* { box-sizing: border-box; }
-.flickity-page-dots{
+* {
+  box-sizing: border-box;
+}
+.flickity-page-dots {
   bottom: -35px;
 }
-.flickity-page-dots .dot{
-  background-color:#fff;
+.flickity-page-dots .dot {
+  background-color: #fff;
   width: 12px;
   height: 12px;
 }
 
-
-body { font-family: sans-serif; }
+body {
+  font-family: sans-serif;
+}
 
 .carousel {
   background: #0d1133;
@@ -229,10 +229,9 @@ body { font-family: sans-serif; }
 .carousel-cell {
   width: 100%;
   height: 500px;
-  background: #8C8;
+  background: #8c8;
   counter-increment: carousel-cell;
 }
-
 
 .carousel-nav .carousel-cell {
   height: 80px;
@@ -245,18 +244,16 @@ body { font-family: sans-serif; }
 }
 
 .carousel-nav .carousel-cell.is-nav-selected {
-  background: #ED2;
+  background: #ed2;
 }
 
 .main-wrapper {
   background-color: #0d1133;
   padding: 60px 5%;
-  color:#fff;
+  color: #fff;
 }
 
-
-
-.main-wrapper span{
+.main-wrapper span {
   margin: 20px 0px;
 }
 
@@ -267,7 +264,7 @@ body { font-family: sans-serif; }
 .main-wrapper img {
   width: 230px;
   height: 345px;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 .main-wrapper .row-wrapper {
@@ -279,13 +276,11 @@ body { font-family: sans-serif; }
   padding-left: 30px;
   background-color: #0d1133;
   transition: all 0.5s ease;
-
 }
 
 .main-wrapper .row-wrapper:hover {
-  background-color: #161A3F;
+  background-color: #161a3f;
 }
-
 
 .main-wrapper .row-wrapper a {
   display: block;
@@ -293,20 +288,18 @@ body { font-family: sans-serif; }
   visibility: hidden;
 }
 
-.main-wrapper .row-wrapper:hover a{
-  visibility:visible;
+.main-wrapper .row-wrapper:hover a {
+  visibility: visible;
 }
 
 .main-wrapper .title {
   margin: 10px 0;
   font-size: 20px;
   text-align: center;
-  max-width: 230px ;
+  max-width: 230px;
 }
 
 /* Seats Class Start */
-
-
 
 body {
   font-family: sans-serif;
@@ -317,7 +310,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .room-seats {
   display: flex;
@@ -326,7 +318,7 @@ body {
   cursor: pointer;
 }
 .room-seats .seat:hover:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   width: 100%;
@@ -335,7 +327,7 @@ body {
   border-radius: 7px;
 }
 .room-seats .seat.active:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   width: 100%;
@@ -465,27 +457,27 @@ body {
 
 /* Seats Class End */
 
-
 /* Seats Class End */
-
 
 /* Footer Section Start */
 footer {
-  background-color: #070A23;	
+  background-color: #070a23;
 }
 
-footer .footer-wrapper{
+footer .footer-wrapper {
   display: flex;
   justify-content: space-between;
   margin: 0px 5%;
 }
 
-footer .footer-wrapper .left, footer .footer-wrapper .right{
+footer .footer-wrapper .left,
+footer .footer-wrapper .right {
   margin-top: 30px;
 }
 
-footer .footer-wrapper .left div , footer .footer-wrapper .right div{
-  margin:15px 0px;
+footer .footer-wrapper .left div,
+footer .footer-wrapper .right div {
+  margin: 15px 0px;
 }
 
 footer .footer-nav-information {
@@ -494,23 +486,21 @@ footer .footer-nav-information {
 }
 
 footer .footer-nav-information ul {
-  padding:0px;
-  margin:0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 footer .footer-nav-information ul li {
   list-style: none;
   display: inline-block;
-  margin-right:45px;
+  margin-right: 45px;
 }
 
 footer .footer-nav-information ul li a {
- color:#fff;
- text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 /* Footer section End */
-
-
 
 /* Login and Register section start */
 .login_register_container {
@@ -547,7 +537,6 @@ footer .footer-nav-information ul li a {
   position: relative;
 }
 
-
 .login_register_container form input[type='password'] {
   width: 100%;
   height: 50px;
@@ -563,12 +552,9 @@ footer .footer-nav-information ul li a {
   outline: none;
 }
 
-.login_register_container form input[type='checkbox']{
+.login_register_container form input[type='checkbox'] {
   margin-right: 20px;
 }
-
-
-
 
 .login_register_container .register-p {
   text-align: center;
@@ -578,10 +564,9 @@ footer .footer-nav-information ul li a {
   align-items: flex-end;
 }
 
-.login_register_container  .username_taken {
+.login_register_container .username_taken {
   margin-top: 15px;
 }
-
 
 .login_register_container .register-btn {
   background-color: #070a23;
@@ -605,7 +590,6 @@ footer .footer-nav-information ul li a {
 }
 /* Login and Register section end */
 
-
 /* Faq section Start */
 .faq-wrapper {
   min-height: 80vh;
@@ -626,6 +610,11 @@ footer .footer-nav-information ul li a {
   padding: 20px;
 }
 
+.text-middle {
+  margin-top: 100px;
+  text-align: center;
+}
+
 strong {
   font-size: 30px;
 }
@@ -644,4 +633,94 @@ p {
   padding-bottom: 5px;
 }
 
+.tree,
+.tree ul,
+.tree li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
 
+.tree {
+  margin: 80px 5em;
+  text-align: center;
+}
+.tree,
+.tree ul {
+  display: table;
+}
+.tree ul {
+  width: 100%;
+}
+.tree li {
+  display: table-cell;
+  padding: 0.5em 0;
+  vertical-align: top;
+  outline: none;
+}
+/* _________ */
+.tree li:before {
+  outline: solid 1px white;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.tree li:first-child:before {
+  left: 50%;
+}
+.tree li:last-child:before {
+  right: 50%;
+}
+
+.tree code,
+.tree span {
+  border: solid 0.1em white;
+  border-radius: 0.2em;
+  display: inline-block;
+  margin: 0 0.2em 0.5em;
+  padding: 0.2em 0.5em;
+  position: relative;
+}
+/* If the tree represents DOM structure */
+
+/* | */
+.tree ul:before,
+.tree code:before,
+.tree span:before {
+  outline: solid 1px white;
+  content: '';
+  height: 0.5em;
+  left: 50%;
+  position: absolute;
+}
+.tree ul:before {
+  top: -0.5em;
+}
+.tree code:before,
+.tree span:before {
+  top: -0.55em;
+}
+
+
+.tree a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-btn {
+  background-color: #D1A24D;
+}
+
+/* The root node doesn't connect upwards */
+.tree > li {
+  margin-top: 0;
+}
+.tree > li:before,
+.tree > li:after,
+.tree > li > code:before,
+.tree > li > span:before {
+  outline: none;
+}

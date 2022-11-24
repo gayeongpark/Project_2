@@ -1,7 +1,8 @@
 const router = require('express').Router();
 
-router.get('/terms', (req, res) => {
-    res.render('terms');
-  });
+
+router.get('/map', (req, res) => {
+  res.render('map');
+});
 
 module.exports = router;
