@@ -2,23 +2,31 @@
 <h1 class="text-center p-4">Admin Page</h1>
 <h2 class="text-center p-4">Add Movies</h2>
 </div>
-  <form action="/addmovie" method="POST">
+  <form action="/admin/createshow" method="post">
 <div class="inputForm">
 <div class = "labelDiv">
 
     <label> Date </label><br>
-        {{!-- <script type="text/javascript"
-    src="https://www.snaphost.com/jquery/Calendar.aspx"></script> --}} 
         <input type="date" class="formInput" name="date"><br>
 </div>
 <br>
 <div class = "labelDiv">
-    <label> Movie </label><br>
-        <input type="text" class="formInput" name="movie"><br>
+    <label> Available Seating </label><br>
+        <input type="text" class="formInput" name="venueSeating" placeholder="default value 42"><br>
 </div>
 <br>
 <div class = "labelDiv"></div>
-    <label> Directed by </label><br>
-        <input type="text" class="formInput" name="director"><br>
+    <label for="movie-select"> Select Movie </label><br>
+    <select name="movie" id="movie-select">
+        <option value="">--Please choose an option--</option>
+        {{#each film}}
+        date {{date}}
+        <option value={{id}}>{{title}}:{{year}}</option>
+        {{/each}}
+    </select><br>
+
 </div>
+<button class="addDB" type="submit">Add Show Schedule</button>
 </form>
+<br>
+

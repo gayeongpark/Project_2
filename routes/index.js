@@ -1,14 +1,20 @@
 const router = require("express").Router();
 const Movie = require("../models/movie.model");
+const Show = require("../models/show.model");
 
 // Inject info  from the DATABASE
-const dataDB = require('../db/movies.loaded.json')
+//const dataDB = require('../db/movies.loaded.json')
 const {isUserLogIn} = require('../middleware/authorization');
 
 /* GET home page */
 router.get("/", (req, res) => {
   // Injecting dataDB
-  res.render("index", {dataDB});
+  Show.find().then( (dataDB) => {
+    res.render("index", {dataDB});
+  }).catch( error =>{
+    console.error(error);
+  })
+
 });
 
 

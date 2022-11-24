@@ -34,7 +34,7 @@ app.use(( req, res, next) => {
         } 
         
         if( GOD === 'admin'){
-            return '<a  href="/admin" class="btn btn-light">Admin Login</a>';
+            return '<a  href="/admin" class="btn btn-light">Admin CMS</a>';
         } else {
             return '';
         }
@@ -62,14 +62,21 @@ app.use(( req, res, next) => {
 const index = require('./routes/index');
 app.use('/', index);
 
-const venue = require('./routes/venue');
-app.use('/venue', venue);
+const book = require('./routes/book');
+app.use('/', book);
 
 const admin = require('./routes/admin');
 app.use('/admin', admin);
 
 const auth = require("./routes/auth");
 app.use("/", auth);
+
+const contact = require('./routes/contact');
+app.use('/', contact);
+
+const terms = require('./routes/terms');
+app.use('/', terms);
+
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);

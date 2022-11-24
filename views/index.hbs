@@ -1,20 +1,20 @@
 <!-- HeroSection HTML init  -->
 <div class="carousel carousel-main" data-flickity='{ "hash": true , "contain": true }'>
   {{#each dataDB}}
-      <div class="carousel-cell"  style="background-image:url({{poster}})" > 
+      <div class="carousel-cell"  style="background-image:url({{movie.poster}})" > 
         <div class="cell-wrapper col-8" >
               <div class="cell-title">
-                  {{title}}
+                  {{movie.title}}
               </div>
               <div class="cell-content">
-                  {{plot}}
+                  {{movie.plot}}
               </div>
               <div class="cell-date">
-                Next show: 12.12.2022
+                Next show: {{date}}
               </div>
               <div class="cell-buttons">
-                <a href='/venue' class="btn btn-warning">Book now</button>
-                <a href={{trailer}} target="_blank" class="btn btn-light">Watch Trailer</a>
+                <a href='/venue' class="btn btn-book">Book now</button>
+                <a href={{movie.trailer}} target="_blank" class="btn btn-light">Watch Trailer</a>
         </div>
       </div> 
   </div>
@@ -35,9 +35,12 @@
       {{#each dataDB}}
         <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12">
             <div class="row-wrapper">
-              <img src={{img}} alt={{title}} >
-              <a href='/venue' class="btn btn-warning">Book now</a>
-              <div class="title">{{title}}</div>
+              <img src={{movie.img}} alt={{movie.title}} >
+              <a href='/booking' class="btn btn-book">Book now</a>
+              <div class="title">{{movie.title}}</div>
+              <div class="title">Date: {{date}}</div>
+              <div class="title">Duration: {{movie.duration}}</div>
+              <div class="title">Seats remaining: {{venueSeating}}</div>
             </div>
           </div>
             
