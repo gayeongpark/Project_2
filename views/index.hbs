@@ -13,7 +13,7 @@
                 Next show: {{date}}
               </div>
               <div class="cell-buttons">
-                <a href='/venue' class="btn btn-book">Book now</button>
+                <a href='/booking/{{id}}' class="btn btn-book">Book now</button>
                 <a href={{movie.trailer}} target="_blank" class="btn btn-light">Watch Trailer</a>
         </div>
       </div> 
@@ -36,7 +36,7 @@
         <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12">
             <div class="row-wrapper">
               <img src={{movie.img}} alt={{movie.title}} >
-              <a href='/booking' class="btn btn-book">Book now</a>
+              <a href='/booking/{{id}}' class="btn btn-book">Book now</a>
               <div class="title">{{movie.title}}</div>
               <div class="title">Date: {{date}}</div>
               <div class="title">Duration: {{movie.duration}}</div>

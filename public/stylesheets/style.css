@@ -659,3 +659,9 @@ footer .footer-nav-information ul li a {
 }
 
 /* Terms and Condition section End */
+
+
+.booking-room {
+  display: flex;
+  justify-content: center;
+}

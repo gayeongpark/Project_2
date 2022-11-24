@@ -27,13 +27,27 @@ const Show = require("../models/show.model");
 // });
 
 
+// hbs.registerHelper('book', function(string){
+//     let element;
+//     const id = '637f71c85a800615bf8cf4bb';
+//     Show.findById(id).then( dataMovie => {
+//         console.log('data: ', dataMovie);
+//         element = dataMovie;
+//         console.log(element)
+//         return '32';
+//     }).catch( error =>{
+//         console.error(error);
+//     })
+//     console.log('element',element);
+//     return element;
+// });
+
+
 /* GET home page */
 
-router.get("/booking", (req, res) => {
-    //const id = req.params.id; 
-    //console.log(id);
-    const id = '637f71c85a800615bf8cf4bb';
-    Show.findById(id).then( dataMovie => {
+router.get("/booking/:id", (req, res) => {
+    const id = req.params.id; 
+    Show.findById(id).then( dataMovie => { 
         res.render("book", {dataMovie});
     }).catch( error =>{
         console.error(error);
@@ -41,6 +55,29 @@ router.get("/booking", (req, res) => {
 });
   
 
+router.post("/booking/:id", (req, res) => {
+    
+    const quantity  = req.body.quantity;
+    let totalNumber
+    Show.findById(req.params.id).then( data => {
+        console.log(data.venueSeating);
+         totalNumber  = data.venueSeating - quantity;
+
+         Show.findByIdAndUpdate(req.params.id , { venueSeating: totalNumber } ).then( update =>{
+            console.log(update);
+        })
+        
+    }).catch( error=>{
+        console.error(error);
+    })
+    console.log(totalNumber);
+    
+
+
+    res.redirect('/');
+    
+});
+  
 
 
 module.exports = router;
