@@ -612,3 +612,36 @@ footer .footer-nav-information ul li a {
 }
 /* Faq section End */
 
+.terms-container {
+  padding: 50px;
+  margin: 20px;
+}
+
+.terms-heading {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.terms-div {
+  padding: 20px;
+}
+
+strong {
+  font-size: 30px;
+}
+
+.list-item {
+  margin-bottom: 15px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+p {
+  line-height: 26px;
+}
+
+.small-list {
+  padding-bottom: 5px;
+}
+
+
