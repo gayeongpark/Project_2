@@ -59,7 +59,9 @@ router.post("/createshow",	GodModeLogIn, (req, res, next) => {
             res.redirect("/admin/createshow");
             next(error);
         });
-
+            res.redirect("/admin")
+    }).catch(error => {
+        next(error);
     });
 });   
 
