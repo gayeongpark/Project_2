@@ -117,14 +117,39 @@ nav .logo .blink {
 body {
   background-color: #0d1133;
   color: #fff;
+  font-family: 'Inter', sans-serif;
+ }
+
+.btn-book {
+  background: #B68B3A;
+  border-radius: 5px;
+  color:#fff;
+  transition: background-color 0.5s ease;
 }
-/* General Css End */
+
+.btn-book:hover {
+  background: #d1a24d; 
+  border:1px solid #fff;
+}
+
+.big-gap {
+  margin-bottom: 200px;
+}
+.lg-gap {
+  margin-bottom: 400px;
+}
+
+.max-gap{
+  margin-bottom: 600px;
+}
+ /* General Css End */
+
 
 /* Nav Section Start  */
 nav.navbar {
-  background-color: #070a23;
-  height: 7vh;
-  padding: 10px 0;
+  background-color:  #070A23;
+  min-height: 50px;
+  padding:10px 0;
 }
 
 nav div {
@@ -138,7 +163,11 @@ nav .navbar-wrapper {
   justify-content: space-between;
 }
 
-nav .navbar-wrapper .login {
+nav .navbar-wrapper .logo {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+nav .navbar-wrapper .login{
   display: flex;
   align-items: center;
 }
@@ -150,16 +179,13 @@ nav .navbar-wrapper .login a {
 nav .navbar-wrapper .login .user {
   margin-right: 20px;
 }
-
 /* Nav Section End  */
 
 .cell-title {
   font-family: 'Archivo';
   font-style: normal;
-  font-weight: 700;
   font-size: 36px;
   line-height: 39px;
-  color: #fff;
 }
 
 .cell-wrapper {
@@ -179,6 +205,22 @@ nav .navbar-wrapper .login .user {
   color: #fff;
   margin: 20px 0;
 }
+
+
+
+.cell-wrapper .cell-buttons .btn-book {
+  background: #B68B3A;
+  border-radius: 5px;
+  color:#fff;
+  transition: background-color 0.5s ease;
+}
+
+
+.cell-wrapper .cell-buttons .btn-book:hover {
+  background: #d1a24d; 
+  border:1px solid #fff;
+}
+
 
 .cell-content {
   width: 430px;
@@ -218,9 +260,6 @@ nav ul li {
   height: 12px;
 }
 
-body {
-  font-family: sans-serif;
-}
 
 .carousel {
   background: #0d1133;
@@ -253,7 +292,12 @@ body {
   color: #fff;
 }
 
-.main-wrapper span {
+.main-wrapper .row {
+  display: flex;
+  justify-content: center;
+}
+
+.main-wrapper span{
   margin: 20px 0px;
 }
 
@@ -301,9 +345,6 @@ body {
 
 /* Seats Class Start */
 
-body {
-  font-family: sans-serif;
-}
 /* Seats Class Start */
 
 .ironhack-room {
@@ -500,11 +541,16 @@ footer .footer-nav-information ul li a {
   color: #fff;
   text-decoration: none;
 }
+
+footer .footer-wrapper .right .payment-icon-wrapper {
+  margin-top: 30px;
+}
+
 /* Footer section End */
 
 /* Login and Register section start */
 .login_register_container {
-  padding: 25px 300px 25px 300px;
+  /* padding: 25px 300px 25px 300px; */
   margin: 50px;
   outline: none;
   font-size: 16px;
@@ -596,9 +642,10 @@ footer .footer-nav-information ul li a {
 }
 /* Faq section End */
 
+
+/* Terms and Condition section Start */
 .terms-container {
-  padding: 50px;
-  margin: 20px;
+  margin-top:100px;
 }
 
 .terms-heading {
@@ -606,33 +653,88 @@ footer .footer-nav-information ul li a {
   font-weight: bold;
 }
 
-.terms-div {
-  padding: 20px;
-}
-
-.text-middle {
-  margin-top: 100px;
-  text-align: center;
-}
-
-strong {
-  font-size: 30px;
-}
-
-.list-item {
+.terms-container .list-item {
   margin-bottom: 15px;
   margin-top: 50px;
   font-weight: bold;
 }
 
-p {
+.terms-container p {
   line-height: 26px;
 }
 
-.small-list {
+.terms-container .small-list {
   padding-bottom: 5px;
 }
 
+/* Terms and Condition section End */
+
+
+.booking-room {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* Contact messages  start */
+
+.contact-messages{
+  margin-top: 200px;
+}
+
+
+/* Contact messages  end */
+
+
+
+/* Imprint-wrapper start */
+.imprint-wrapper{
+  display: flex;
+  justify-content: center;
+  margin:60px 0px;
+}
+
+.imprint-wrapper svg {
+  width: 60px;
+  height: 60px;
+}
+/* Imprint-wrapper end */
+
+/* Booking Room Start */
+.booking-room {
+  margin: 100px 0px;
+}
+
+.booking-room h1 {
+  margin:30px 0;
+}
+
+.booking-room ul {
+ 
+}
+
+.booking-room ul li {
+ list-style:circle;
+ margin: 30px 0;
+ font-size: 25px;
+}
+
+.booking-room ul li:first-child{
+  margin-top: 0;
+}
+
+.booking-room .bigImage img{
+  width: 400px;
+  height: auto;
+}
+
+.booking-room form input[type="submit"] {
+  display: block;
+}
+/* Booking Rom End */
+
+/* Sitemap Section Start */
 .tree,
 .tree ul,
 .tree li {
@@ -710,10 +812,18 @@ p {
   color: #fff;
 }
 
-.main-btn {
-  background-color: #D1A24D;
+.tree .main-btn {
+  background: #B68B3A;
+  transition: all 0.5s ease;
 }
 
+.tree .main-btn:hover{
+  background: #d1a24d;
+}
+
+.tree .main-btn:hover a{
+  color: #070A23;
+}
 /* The root node doesn't connect upwards */
 .tree > li {
   margin-top: 0;
@@ -725,11 +835,4 @@ p {
   outline: none;
 }
 
-.icon-container {
- display: flex;
- flex-direction: column;
-}
-
-
-
-
+/* Sitemap Section End */

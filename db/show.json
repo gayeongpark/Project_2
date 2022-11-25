@@ -1,0 +1,191 @@
+[
+{
+        "date": "2022-11-25",
+        "venueSeating": 42,
+        "movie": {"title":"Tangerine",
+        "year":"2015",
+        "director":"Sean Baker",
+        "duration":"1h 27min",
+        "img":"https://resizing.flixster.com/vqIyeEM_QNBDPcn88cq8784NQ-Y=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2VhOTI0ODhlLTc2YTktNGM4Yy04NTAzLWE5ODAwMTdhYmE3Yi53ZWJw",
+        "poster":"https://i.ibb.co/nz9st2c/tangerine-poster.jpg",
+        "genre":[
+           "Comedy",
+               "Drama"
+        ],
+        "trailer":"https://www.youtube.com/watch?v=ALSwWTb88ZU",
+        "plot": "After hearing that her boyfriend/pimp cheated on her while she was in jail, a transgender sex worker and her best friend set out to find him and teach him and his new lover a lesson."  
+        }
+    },
+    {
+        "date": "2022-11-26",
+        "venueSeating": 42,
+        "movie": {
+            "title":"The Nightmare Before Christmas",
+            "year":"2000",
+            "director":"Henry Selick",
+            "duration":"1h 15min",
+            "img":"https://lumiere-a.akamaihd.net/v1/images/p_thenightmarebeforechristmas_19754_abc0f5f5.jpeg",
+            "poster": "https://i.ibb.co/SsKP1Rj/nightmare-before-christmas.jpg",
+            "genre":[
+               "Comedy",
+               "Fantasy",
+               "Holiday",
+               "Kids"
+            ],
+            "trailer":"https://www.youtube.com/watch?v=wr6N_hZyBCk",
+            "plot":"The film follows the misadventures of Jack Skellington, Halloweentown's beloved pumpkin king, who has become bored with the same annual routine of frightening people in the real world."
+         }
+    },
+    {   
+        "date": "2022-11-27",
+        "venueSeating": 42,
+        "movie": {
+            "title":"Die Hard",
+            "year":"1988",
+            "director":"John McTiernan",
+            "duration":"2h 11min",
+            "img":"https://flxt.tmsimg.com/assets/p10255_v_h9_aa.jpg",
+            "poster":"https://i.ibb.co/z5c7bLg/die-hard-poster.jpg",
+            "genre":[
+               "Action",
+               "Mystery",
+               "Thriller"
+            ],
+            "trailer":"https://www.youtube.com/watch?v=jaJuwKCmJbY",
+            "plot":"New York City policeman John McClane (Bruce Willis) is visiting his estranged wife (Bonnie Bedelia) and two daughters on Christmas Eve. He joins her at a holiday party in the headquarters of the Japanese-owned business she works for."
+         }
+    },
+    {   
+        "date": "2022-11-28",
+        "venueSeating": 42,
+        "movie": {
+            "title":"Elf",
+            "year":"2003",
+            "director":"Jon Favreau",
+            "duration":"1h 37min",
+            "img":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJ26TQTNp3dhvAHiaJCRkk2nMifez5b-6m5Imj7c6EgGOrbVbi",
+            "poster":"https://i.ibb.co/YhpYPD3/elf-poster.jpg",
+            "genre":[
+               "Comedy",
+               "Fantasy",
+               "Kids"
+            ],
+            "trailer":"https://www.youtube.com/watch?v=14o38xfHlXc",
+            "plot":"Buddy (Will Ferrell) was accidentally transported to the North Pole as a toddler and raised to adulthood among Santa's elves. Unable to shake the feeling that he doesn't fit in, the adult Buddy travels to New York, in full elf uniform, in search of his real father."
+         }
+    },
+    {   
+        "date": "2022-11-29",
+        "venueSeating": 42,
+        "movie": {
+            "title":"Bad Santa",
+            "year":"1972",
+            "director":"Terry Zwigoff",
+            "duration":"1h 33min",
+            "img":"https://de.web.img2.acsta.net/medias/nmedia/18/63/55/89/18694290.jpg",
+            "poster":"https://i.ibb.co/2PM9pf2/bad-santa-poster.jpg",
+            "genre":[
+               "Crime",
+               "Drama",
+               "Comedy",
+               "Holiday"
+            ],
+            "trailer":"https://www.youtube.com/watch?v=cvXyEiIoH2c",
+            "plot":"In this dark comedy, the crotchety Willie T. Stokes (Billy Bob Thornton) and his partner (Tony Cox) reunite once a year for a holiday con. Posing as a mall Santa and his elf, they rip off shopping outlets on Christmas Eve."
+         }
+    },
+    {   
+        "date": "2022-11-30",
+        "venueSeating": 42,
+        "movie": {
+            "title":"Home Alone",
+            "year":"1990",
+            "director":"Frank Darabont",
+            "duration":"1h 42min",
+            "img":"https://m.media-amazon.com/images/M/MV5BMjA5NjA5NzE4OF5BMl5BanBnXkFtZTgwNzUxNDg4NjE@._V1_.jpg",
+            "poster":"https://i.ibb.co/4dW3WVt/home-alone-poster.jpg",
+            "genre":[
+               "Comedy",
+               "Holiday",
+               "Kids"
+            ],
+            "trailer":"https://www.youtube.com/watch?v=jEDaVHmw7r4",
+            "plot":"When bratty 8-year-old Kevin McCallister (Macaulay Culkin) acts out the night before a family trip to Paris, his mother (Catherine O'Hara) makes him sleep in the attic."
+         }
+    },
+    {   
+        "date": "2022-12-01",
+        "venueSeating": 42,
+        "movie": {
+            "title":"How Grinch stole Christmas",
+            "year":"2000",
+            "director":"Ron Howard",
+            "duration":"1h 45min",
+            "img":"https://upload.wikimedia.org/wikipedia/en/e/e7/How_the_Grinch_Stole_Christmas_film_poster.jpg",
+            "poster":"https://i.ibb.co/WkgvfyX/stole-Christmas-poster.jpg",
+            "genre":[
+               "Comedy",
+               "Fantasy",
+               "Kids"
+            ],
+            "trailer":"https://www.youtube.com/watch?v=Bf6D-i8YpHg",
+            "plot":"In this live-action adaptation of the beloved children's tale by Dr. Seuss, the reclusive green Grinch (Jim Carrey) decides to ruin Christmas for the cheery citizens of Whoville."
+         }
+    },
+    {   
+        "date": "2022-12-02",
+        "venueSeating": 42,
+        "movie": {
+            "title":"Tokyo Godfathers",
+            "year":"2003",
+            "director":"Satoshi Kon",
+            "duration":"1h 30min",
+            "img":"https://m.media-amazon.com/images/M/MV5BZGRlMDM4NGItMDMwMC00ZWMzLWE0ZDItNGE3MmZmMGMwMzJmXkEyXkFqcGdeQXVyMDAwMDAwNA@@._V1_.jpg",
+            "poster":"https://i.ibb.co/D9pNG8D/tokyo-godfathers-poster.jpg",
+            "genre":[
+               "Comedy",
+               "Drama",
+               "Anime"
+            ],
+            "trailer":"https://www.youtube.com/watch?v=ZL_2E-HfIZY",
+            "plot":"Middle-aged alcoholic Gin (Toru Emori), teenage runaway Miyuki (Aya Okamoto) and former drag queen Hana (Yoshiaki Umegaki) are a trio of homeless people surviving as a makeshift family on the streets of Tokyo."
+         }
+    },
+    {   
+        "date": "2022-12-03",
+        "venueSeating": 42,
+        "movie": {
+            "title":"Black Christmas",
+            "year":"2007",
+            "director":"Gllen Morgan",
+            "duration":"1h 30min",
+            "img":"https://static.kino.de/wp-content/uploads/2015/08/black-christmas-2006-filmplakat.jpg",
+            "poster":"https://i.ibb.co/ym94PRc/black-christmas.jpg",
+            "genre":[
+               "Holiday",
+               "Horror"
+            ],
+            "trailer":"https://www.youtube.com/watch?v=1G22-87SiYo",
+            "plot":"The holiday season turns deadly for a group of sorority sisters (Katie Cassidy, Mary Elizabeth Winstead, Lacey Chabert, Michelle Trachtenberg) who are stranded at their campus house during a snowstorm."
+         }
+    },
+    {
+        "date": "2022-12-04",
+        "venueSeating": 42,
+        "movie": {            
+            "title":"Miracle on34th street",
+            "year":"1947",
+            "director":"George Seaton",
+            "duration":"1h 36min",
+            "img":"https://flxt.tmsimg.com/assets/p4271_p_v8_ae.jpg",
+            "poster": "https://i.ibb.co/fHf3Hfc/Miracle-on34th.jpg",
+            "genre":[
+               "Holiday",
+               "Drama",
+               "Comedy"
+            ],
+            "trailer":"https://www.youtube.com/watch?v=-ce_op2qG24&t=143s",
+            "plot": "In this Christmas classic, an old man going by the name of Kris Kringle (Edmund Gwenn) fills in for an intoxicated Santa in Macy's annual Thanksgiving Day parade. Kringle proves to be such a hit that he is soon appearing regularly at the chain's main store in midtown Manhattan."
+         }
+    }
+]

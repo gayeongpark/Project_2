@@ -21,9 +21,17 @@ const contactSchema = new Schema({
   {
     timestamps: true
 }
+<<<<<<< HEAD
   
   )
   
   const Contact = model("Contact", contactSchema);
   
+=======
+
+  )
+
+  const Contact = model("Contact", contactSchema);
+
+>>>>>>> 26490c07c5104240efcb6e1c922cb905b940fd55
   module.exports = Contact;

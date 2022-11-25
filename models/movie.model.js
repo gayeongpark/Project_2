@@ -25,7 +25,10 @@ const movieSchema = new Schema({
         type: String, 
         required: true
       },
-
+    poster: {
+        type: String, 
+        required: true
+    },  
     genre: {
         type: Array, 
         required: true

@@ -6,6 +6,7 @@
     <label id='name' for='username'>Username: </label>
     <input type='text' name='username' placeholder='Username' required />
 
+<<<<<<< HEAD
     <label for='password'>Password:</label>
     <input
       type='password'
@@ -21,6 +22,19 @@
       <a href='#' style='color:dodgerblue'> Terms & Privacy</a>.</p>
 
       <button class='register-btn' type='submit'>Register</button>
+=======
+    <label id='email' for='email'>Email: </label>
+    <input type='text' name='email' placeholder='Email' required />
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" placeholder='Password' required />
+    <i class="bi bi-eye-slash" id="togglePassword"></i>
+
+    <p>By creating an account you agree to our
+      <a href='#' style='color:dodgerblue'>Terms & Privacy</a>.</p>
+    <div class="clearfix">
+      <button class="register-btn" type='submit'>Register</button>
+>>>>>>> 26490c07c5104240efcb6e1c922cb905b940fd55
     </div>
     {{#if message}}
       <p class='username_taken'>{{message}}</p>

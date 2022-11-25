@@ -2,24 +2,20 @@ const { Schema, model } = require("mongoose");
 
 const showSchema = new Schema({
 
-    date:{Date, required : true },
+    date:{
+        type: String, 
+        required : true 
+    },
 
-    movie: [{
-        id: {
-        type :  ObjectId,
-        ref :  "movie"
-        }, 
-    }],
+    venueSeating: {
+        type: Number,
+        required : true 
+    },
 
-    venueSeating: [{
-        type: ObjectId.seating,
-        ref : "venue"
-    }],
-
-    freeSeating: [{
-        type: ObjectId.seating,
-        ref : "venue"
-    }]
+    movie : {
+        type: Schema.Types.Mixed,
+        required: true
+    }
 },
 {
     timestamps: true

@@ -6,10 +6,29 @@
 // // Seating left
 // const seating =   ['a1']
 
+<<<<<<< HEAD
 // // Total seat  5 (We can set this one base of the total numbers )
 // seating.length = 5;
 
 // // Create a new div element
+=======
+    
+    // Password toggle Icon
+    const iconPassword = document.querySelector("#togglePassword");
+    const inputpassword = document.querySelector("#password");
+
+    if(iconPassword){
+        iconPassword.addEventListener("click", function () {
+            // toggle the type attribute
+        
+            const type = inputpassword.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("bi-eye");
+        });
+    }
+>>>>>>> 26490c07c5104240efcb6e1c922cb905b940fd55
 
 // for (let index = 0; index < seating.length; index++) {
 //   // Adding the specific class for each elements
@@ -20,6 +39,7 @@
 //     return valueChecked === "string" ? "inactive" : "active";
 //   }
 
+<<<<<<< HEAD
 //   const element = document.createElement("div");
 
 //   // Inject content into a javascript
@@ -68,3 +88,15 @@ iconPassword.addEventListener('click', function () {
   // toggle the icon
   this.classList.toggle('bi-eye');
 });
+=======
+ const carouselElement  = document.querySelector(".carousel");
+
+    function reportWindowSize() {   
+        // Check innerWidth
+        if(innerWidth <= 1000  ){
+            carouselElement.style.width = `${innerWidth}px`;
+        }
+    }
+reportWindowSize();
+window.onresize = reportWindowSize;
+>>>>>>> 26490c07c5104240efcb6e1c922cb905b940fd55

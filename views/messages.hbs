@@ -1,0 +1,14 @@
+<section class="container-fluid imprint-wrapper messages" >
+    <div class="content col-6">
+        <h1>Messages</h1>
+            {{#each result}}
+            <ul>
+                <li><strong>Message {{@index}}  </strong></li>
+                <li><strong>First Name: </strong>{{firstname}}</li>
+                <li><strong>Last Name : </strong>{{lastname}}</li>
+                <li><strong>Email : </strong>{{email}}</li>
+                <li><strong>Message : </strong>{{message}}</li>
+            </ul>
+            {{/each}}
+    </div>
+</section>

@@ -1,49 +1,53 @@
-
 <h1 class="text-center p-4">Admin Page</h1>
 <h2 class="text-center p-4">Add Movies</h2>
-
   <form action="/admin/addmovie" method="post">
 <div class="inputForm">
 <div class = "labelDiv">
     <label> Movie Title </label><br>
-        <input id="title" type="text" class="formInput" name="title"><br>
+        <input id="title" type="text" class="formInput" name="title" placeholder="Title"><br>
 </div>
 <br>
 <div class = "labelDiv">
     <label> Year of Release </label><br>
-        <input id="year" type="text" class="formInput" name="year"><br>
+        <input id="year" type="text" class="formInput" name="year" placeholder="2022"><br>
 </div>
 <br>
 <div class = "labelDiv"></div>
     <label> Directed by </label><br>
-        <input id="director" type="text" class="formInput" name="director"><br>
+        <input id="director" type="text" class="formInput" name="director" placeholder="Director"><br>
 </div>
 <br>
 <div class = "labelDiv"></div>
     <label> Duration </label><br>
-        <input id="duration" type="text" class="formInput" name="duration"><br>
+        <input id="duration" type="text" class="formInput" name="duration" placeholder="1h 30min"><br>
 </div>
 <br>
 <div class = "labelDiv"></div>
     <label> Image Link URL </label><br>
-        <input id="img" type="text" class="formInput" name="img"><br>
+        <input id="img" type="text" class="formInput" name="img" placeholder="http://www.flixster.com"><br>
+</div>
+<br>
+<div class = "labelDiv"></div>
+    <label> Poster Link URL </label><br>
+        <input id="img" type="text" class="formInput" name="poster" placeholder="img size 2000x500 px"><br>
 </div>
 <br>
 <div class = "labelDiv"></div>
     <label> Genre </label><br>
-        <input id="genre" type="text" class="formInput" name="genre"><br>
+        <input id="genre" type="text" class="formInput" name="genre" placeholder='"Horror", "Comedy"'><br>
 </div>
 <br>
 <div class = "labelDiv"></div>
     <label> Preview Link URL </label><br>
-        <input id="trailer" type="text" class="formInput" name="trailer"><br>
+        <input id="trailer" type="text" class="formInput" name="trailer" placeholder="http://www.youtube.com"><br>
 </div>
 <br>
 <div class = "labelDiv"></div>
     <label> Plot </label><br>
-        <input id="plot" type="text" class="formInput" name="plot"><br>
+        <input id="plot" type="text" class="formInput" name="plot" placeholder="Joes day out turns interesting when..."><br>
 </div>
 <br>
       <button class="addDB" type="submit">Add Movie to Database</button>
 </div>
-  </form>
+
+</form>
