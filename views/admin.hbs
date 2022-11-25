@@ -1,14 +1,10 @@
 <h1 class="text-center p-4">Admin Page</h1>
 <h2 class="text-center p-4">Current Shows</h2>
 
-<section class="w-100 p-4 d-flex justify-content-center pb-4">
-
 <section class="main-wrapper">
     <h2>Cinema program</h2>
-        <a href="admin/addmovie"><button type="button" class="btn btn-success btn-block mb-4">Add Movie</button></a>
-        <a href="admin/editmovie"><button type="button" class="btn btn-success btn-block mb-4">Edit Movie</button></a><br>
+         <a href="admin/addmovie"><button type="button" class="btn btn-success btn-block mb-4">Add Movie</button></a>
          <a href="admin/createshow"><button type="button" class="btn btn-danger btn-block mb-4">Create Show</button></a>
-         <a href="admin/editshow"><button type="button" class="btn btn-success btn-block mb-4">Edit Show</button></a>
          <a href="admin/messages"><button type="button" class="btn btn-danger btn-block mb-4">Show Messages</button></a>
     <div class="row">
         {{#each dataDB}}
@@ -19,11 +15,13 @@
                     <div class="title">Date: {{date}}</div>
                     <div class="title">Duration: {{movie.duration}}</div>
                     <div class="title">Seating: {{venueSeating}}</div>
-                    <a href='/admin/deleteshow' class="btn btn-warning">Delete Viewing</a>
+                    <form class="text-center" method="POST" action="/admin/deleteshow/{{_id}}?_method=DELETE">
+                        <button class="btn btn-warning" type="submit">Delete Viewing</button>
+                    </form>
+                    <a class="text-center" href="/admin/editshow/{{_id}}"><button type="button" class="btn btn-success btn-block text-center">Edit Show</button></a>
                 </div>
             </div>
         {{/each}}
 
    </div>
- </section>
 </section>

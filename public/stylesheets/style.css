@@ -132,6 +132,17 @@ nav .logo  .blink {
   background: #d1a24d; 
   border:1px solid #fff;
 }
+
+.big-gap {
+  margin-bottom: 200px;
+}
+.lg-gap {
+  margin-bottom: 400px;
+}
+
+.max-gap{
+  margin-bottom: 600px;
+}
  /* General Css End */
 
 
@@ -279,7 +290,10 @@ nav ul li {
   color:#fff;
 }
 
-
+.main-wrapper .row {
+  display: flex;
+  justify-content: center;
+}
 
 .main-wrapper span{
   margin: 20px 0px;
@@ -529,6 +543,11 @@ footer .footer-nav-information ul li a {
  color:#fff;
  text-decoration: none;
 }
+
+footer .footer-wrapper .right .payment-icon-wrapper {
+  margin-top: 30px;
+}
+
 /* Footer section End */
 
 
@@ -665,3 +684,165 @@ footer .footer-nav-information ul li a {
   display: flex;
   justify-content: center;
 }
+
+
+
+/* Contact messages  start */
+
+.contact-messages{
+  margin-top: 200px;
+}
+
+
+/* Contact messages  end */
+
+
+
+/* Imprint-wrapper start */
+.imprint-wrapper{
+  display: flex;
+  justify-content: center;
+  margin:60px 0px;
+}
+
+.imprint-wrapper svg {
+  width: 60px;
+  height: 60px;
+}
+/* Imprint-wrapper end */
+
+/* Booking Room Start */
+.booking-room {
+  margin: 100px 0px;
+}
+
+.booking-room h1 {
+  margin:30px 0;
+}
+
+.booking-room ul {
+ 
+}
+
+.booking-room ul li {
+ list-style:circle;
+ margin: 30px 0;
+ font-size: 25px;
+}
+
+.booking-room ul li:first-child{
+  margin-top: 0;
+}
+
+.booking-room .bigImage img{
+  width: 400px;
+  height: auto;
+}
+
+.booking-room form input[type="submit"] {
+  display: block;
+}
+/* Booking Rom End */
+
+/* Sitemap Section Start */
+.tree,
+.tree ul,
+.tree li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.tree {
+  margin: 80px 5em;
+  text-align: center;
+}
+.tree,
+.tree ul {
+  display: table;
+}
+.tree ul {
+  width: 100%;
+}
+.tree li {
+  display: table-cell;
+  padding: 0.5em 0;
+  vertical-align: top;
+  outline: none;
+}
+/* _________ */
+.tree li:before {
+  outline: solid 1px white;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.tree li:first-child:before {
+  left: 50%;
+}
+.tree li:last-child:before {
+  right: 50%;
+}
+
+.tree code,
+.tree span {
+  border: solid 0.1em white;
+  border-radius: 0.2em;
+  display: inline-block;
+  margin: 0 0.2em 0.5em;
+  padding: 0.2em 0.5em;
+  position: relative;
+}
+/* If the tree represents DOM structure */
+
+/* | */
+.tree ul:before,
+.tree code:before,
+.tree span:before {
+  outline: solid 1px white;
+  content: '';
+  height: 0.5em;
+  left: 50%;
+  position: absolute;
+}
+.tree ul:before {
+  top: -0.5em;
+}
+.tree code:before,
+.tree span:before {
+  top: -0.55em;
+}
+
+
+.tree a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.tree .main-btn {
+  background: #B68B3A;
+  transition: all 0.5s ease;
+}
+
+.tree .main-btn:hover{
+  background: #d1a24d;
+}
+
+.tree .main-btn:hover a{
+  color: #070A23;
+}
+/* The root node doesn't connect upwards */
+.tree > li {
+  margin-top: 0;
+}
+.tree > li:before,
+.tree > li:after,
+.tree > li > code:before,
+.tree > li > span:before {
+  outline: none;
+}
+
+/* Sitemap Section End */

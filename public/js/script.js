@@ -65,7 +65,10 @@
  const carouselElement  = document.querySelector(".carousel");
 
     function reportWindowSize() {   
-        carouselElement.style.width = `${innerWidth}px`;
+        // Check innerWidth
+        if(innerWidth <= 1000  ){
+            carouselElement.style.width = `${innerWidth}px`;
+        }
     }
 reportWindowSize();
 window.onresize = reportWindowSize;

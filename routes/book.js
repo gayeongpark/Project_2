@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const hbs = require('hbs');
+const bcrypt = require('bcryptjs');
 const Show = require("../models/show.model");
 
 // Inject info  from the DATABASE
@@ -62,19 +63,27 @@ router.post("/booking/:id", (req, res) => {
     Show.findById(req.params.id).then( data => {
         console.log(data.venueSeating);
          totalNumber  = data.venueSeating - quantity;
-
          Show.findByIdAndUpdate(req.params.id , { venueSeating: totalNumber } ).then( update =>{
-            console.log(update);
         })
-        
     }).catch( error=>{
         console.error(error);
     })
-    console.log(totalNumber);
-    
 
+    const User = req.session.user.username;
+    const email = req.session.user.email;
+    const ticktNumber = bcrypt.hashSync(req.params.id);
+    const seatsPurchase = quantity;
 
-    res.redirect('/');
+    const info =  {
+        "ticktNumber":ticktNumber,
+        "user":User,
+        "email":email,
+        "date": Date.parse(),
+        "quantity":quantity,
+
+    }
+
+    res.render('bookingsMessage', info);
     
 });
   

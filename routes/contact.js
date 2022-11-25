@@ -7,6 +7,7 @@ router.get('/contact', (req, res) => {
 
 router.post('/contact/send', (req, res) => {
   const { firstname, lastname, email, message } = req.body;
+  console.log(firstname);
   Contact.create({
     firstname,
     lastname,
@@ -14,7 +15,12 @@ router.post('/contact/send', (req, res) => {
     message
   })
   .then(createdContact => {
-    res.render("contactSend")
+    const info =  {
+      "firstname":firstname,
+      "lastname": lastname,
+      "email": email
+    }
+    res.render("contactSend", info)
   })
   .catch (err => {
     res.redirect("/")

@@ -4,25 +4,25 @@
 <div>
 <h1>Admin Page</h1>
 <br>
-<h2>Add Show</h2>
+<h2>Edit Show</h2>
 </div>
-  <form action="/admin/createshow" method="post">
+  <form action="/admin/updateshow/{{id}}" method="post">
 <div class="inputForm">
 <div class = "labelDiv">
 
     <label> Date </label><br>
-        <input type="date" class="formInput" name="date"><br>
+        <input type="date" class="formInput" value="{{date}}" name="date"><br>
 </div>
 <br>
 <div class = "labelDiv">
     <label> Available Seating </label><br>
-        <input type="text" class="formInput" name="venueSeating" placeholder="default value 42"><br>
+        <input type="text" class="formInput" value="{{venueSeating}}" name="venueSeating" placeholder="default value 42"><br>
 </div>
 <br>
 <div class = "labelDiv"></div>
     <label for="movie-select"> Select Movie </label><br>
     <select name="movie" id="movie-select">
-        <option value="">--Please choose an option--</option>
+        <option value="">{{movie}}:{{year}}</option>
         {{#each film}}
         date {{date}}
         <option value={{id}}>{{title}}:{{year}}</option>
@@ -30,7 +30,7 @@
     </select><br>
 </div>
 <br>
-<button class="addDB pt-20" type="submit">Add Show Schedule</button>
+<button class="addDB pt-20" type="submit">Updated Show Schedule</button>
 </form>
 <br>
 </div>

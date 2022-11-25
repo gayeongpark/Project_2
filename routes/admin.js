@@ -5,11 +5,18 @@ const Show = require("../models/show.model");
 const {GodModeLogIn} = require('../middleware/authorization');
 
 // Inject info  from the DATABASE
-const dataDB = require('../db/movies.loaded.json')
+const dataDB = require('../db/movies.loaded.json');
+
+
 
 /* GET home page */
-router.get("/", GodModeLogIn,  (req, res, next) => {
-    res.render('admin' , {dataDB});
+router.get("/", GodModeLogIn,  (req, res) => {
+  // Injecting dataDB
+  Show.find().then( (dataDB) => {
+    res.render('admin', {dataDB});
+  }).catch( error =>{
+    console.error(error);
+  })
 });
 
 /* GET add to MOVIE DB page */
@@ -56,6 +63,60 @@ router.post("/createshow",	GodModeLogIn, (req, res, next) => {
     });
 });   
 
+
+/* Deleting movie from admin cms */
+router.delete('/deleteshow/:id' , GodModeLogIn, (req, res) => {
+    console.log('delete');
+    const id = req.params.id;
+    Show.deleteOne({ _id: id}).then(data => {
+        console.log(data);
+        res.redirect("/admin/")
+    } ).catch(error => console.error(error));
+});
+
+
+/* Edit  movie from admin cms */
+router.get('/editshow/:id' , GodModeLogIn, (req, res) => {
+    console.log('Edit');
+    const id = req.params.id;
+    console.log(id);
+    Show.findById({_id: id}).then(data => {
+        Movie.find().sort({createdAt: -1})
+       
+        .then((film) => {
+            console.log(film);
+            const infoData =  {
+                "id":data.id,
+                "date":data.date,
+                "venueSeating":data.venueSeating,
+                "movie":data.movie.title,
+                "year":data.movie.year,
+                "film": film
+            }
+            res.render("editShow", infoData );
+        }).catch(error=> console.error(error));
+
+    } ).catch(error => console.error(error));
+});
+
+/* Edit  movie from admin cms */
+router.post('/updateshow/:id' , GodModeLogIn, (req, res) => {
+    const { date, venueSeating, movie} = req.body;  
+ 
+    const idShow = req.params.id;
+    Movie.findOne({_id: movie})
+    .then(data => {
+        console.log(data);
+         Show.findByIdAndUpdate(idShow, {date, venueSeating, movie:data}).then( data => {
+            console.log('updated');
+            res.redirect('/admin');
+         }).catch( error =>{
+            console.error(error);
+         })
+    
+
+    });
+});
 
 router.get("/messages", GodModeLogIn , (req, res) => {
     
