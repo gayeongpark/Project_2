@@ -13,9 +13,21 @@ const app = express();
 
 // config folder
 require('./config')(app);
+const session = require("express-session")
+const MongoStore = require("connect-mongo")
 
-// Comment  
-require("./config/session.config")(app);
+app.use(
+    session({
+        secret: process.env.SESS_SECRET,
+        cookie: { maxAge: 1000 * 60 * 60 * 24 },
+        resave: true,
+        saveUninitialized: true,
+        store: MongoStore.create({
+            mongoUrl: process.env.MONGODB_URI
+        })
+    })
+)
+    
 
 // default value for title local
 const projectName = 'Project_2';
